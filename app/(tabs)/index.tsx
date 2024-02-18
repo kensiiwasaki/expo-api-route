@@ -6,7 +6,7 @@ import { Text, View } from "@/components/Themed";
 async function fetchHello() {
   const response = await fetch("/hello");
   const data = await response.json();
-  alert("Hello " + data.hello);
+  alert("API fetch成功 : " + "Hello " + data.hello);
 }
 
 export default function TabOneScreen() {
